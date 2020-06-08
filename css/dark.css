@@ -6,8 +6,14 @@
 	.box {
 		color: white;
 		background-color: black;
-		box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.1),
-			0 0px 0 1px rgba(255, 255, 255, 0.02);
+		box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.2),
+			0 0px 0 1px rgba(255, 255, 255, 0.05);
+	}
+	.card {
+		color: white;
+		background-color: black;
+		box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.2),
+			0 0px 0 1px rgba(255, 255, 255, 0.05);
 	}
 	.footer {
 		color: white;
@@ -18,8 +24,8 @@
 	a:hover {
 		color: white;
 	}
-	a {
-		color: #0086c3;
+	a.card-header-icon {
+		color: white;
 	}
 	header.hero.is-primary {
 		background-color: #0086c3;

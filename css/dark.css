@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+	body {
+		color: white;
+		background-color: black;
+	}
+	.box {
+		color: white;
+		background-color: black;
+		box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.1),
+			0 0px 0 1px rgba(255, 255, 255, 0.02);
+	}
+	.footer {
+		color: white;
+		background-color: rgb(12, 12, 12);
+	}
+	strong,
+	.subtitle,
+	a:hover {
+		color: white;
+	}
+	a {
+		color: #0086c3;
+	}
+	header.hero.is-primary {
+		background-color: #0086c3;
+	}
+}

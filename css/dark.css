@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark) {
+	body {
+		color: white;
+		background-color: black;
+	}
+	.box {
+		color: white;
+		background-color: black;
+		box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.2),
+			0 0px 0 1px rgba(255, 255, 255, 0.05);
+	}
+	.card {
+		color: white;
+		background-color: black;
+		box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.2),
+			0 0px 0 1px rgba(255, 255, 255, 0.05);
+	}
+	.footer {
+		color: white;
+		background-color: rgb(12, 12, 12);
+	}
+	strong,
+	.subtitle,
+	a:hover {
+		color: white;
+	}
+	a.card-header-icon {
+		color: white;
+	}
+	header.hero.is-primary {
+		background-color: #0086c3;
+	}
+}

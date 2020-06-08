@@ -10,6 +10,10 @@
 			rel="stylesheet"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="./css/light.css" />
+		<link rel="stylesheet" href="./css/dark.css" />
+		<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+		<script defer src="./js/scripts.js"></script>
 	</head>
 	<body>
 		<header class="hero is-primary">
@@ -48,78 +52,130 @@
 					lanzarlos al público lo más pronto posible.
 				</p>
 				<br />
-				<div class="box">
-					<a class="is-size-4" href="http://www.ludwing.com.mx">
-						Ludwing.com.mx
-					</a>
-					<p>
-						Aplicación web con ejercicios para alumnos de 1° y 3° semestre de
-						vocacional. Desarrollada en conjunto con un profesor de matemáticas, la app
-						ofrece ejercicios y exámenes para que los alumnos practicen estos
-						conocimientos desde su computadora y/o celular a cualquier hora del día.
-						Ofrece evaluaciones con reactivos, evaluaciones con tiempo límite, exámenes
-						diagnóstico, registro de calificaciones y tutoriales de apoyo para algunos
-						temas.
-					</p>
-					<br />
-					<p>
-						Los ejercicios y exámenes están basados en varios programas propiedad del
-						profesor que fueron escritos en QBasic. La app está desarrollada en Vue.js y
-						Materialize en el front-end; Node.js, Express y MongoDB en el back-end;
-						almacenamiento en Firebase y desplegada en Heroku.
-					</p>
-					<span class="tag is-info">Estado: en producción</span>
+				<div class="columns">
+					<div class="column">
+						<div class="card">
+							<header class="card-header">
+								<p class="card-header-title has-text-weight-normal">
+									<a href="http://www.ludwing.com.mx" class="is-size-4"
+										>Ludwing.com.mx
+									</a>
+								</p>
+								<a
+									class="card-header-icon is-hidden-desktop"
+									onclick="toggleCard(this)"
+								>
+									<span class="icon is-large is-pulled-right">
+										<i class="fas fa-angle-up fa-2x"></i>
+									</span>
+								</a>
+							</header>
+							<div class="card-content">
+								<p>
+									Aplicación web con ejercicios para alumnos de 1° y 3° semestre
+									de vocacional. Desarrollada en conjunto con un profesor de
+									matemáticas, la app ofrece ejercicios y exámenes para que los
+									alumnos practicen estos conocimientos desde su computadora y/o
+									celular a cualquier hora del día. Ofrece evaluaciones con
+									reactivos, evaluaciones con tiempo límite, exámenes diagnóstico,
+									registro de calificaciones y tutoriales de apoyo para algunos
+									temas.
+								</p>
+								<br />
+								<p>
+									Los ejercicios y exámenes están basados en varios programas
+									propiedad del profesor que fueron escritos en QBasic. La app
+									está desarrollada en Vue.js y Materialize en el front-end;
+									Node.js, Express y MongoDB en el back-end; almacenamiento en
+									Firebase y desplegada en Heroku.
+								</p>
+								<span class="tag is-info">Estado: en producción</span>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="columns">
 					<div class="column">
-						<div class="box">
-							<a class="is-size-4" href="http://axdecor.herokuapp.com">AXDecor</a>
-							<p>
-								Una aplicación para el sistema Android con realidad aumentada para
-								decoración de interiores. La aplicación ofrece la posibilidad de
-								insertar muebles, adornos y más en cualquier habitación gracias a la
-								realidad aumentada. Permite contactar con los proveedores de los
-								productos, así como hacer un presupuesto con los productos usados.
-							</p>
-							<br />
-							<p>
-								Desarrollada en conjunto con 2 compañeros de mi carrera durante 1
-								año, fue nuestro proyecto de titulación de la carrera. Fue
-								desarrollada usando ARCore, Kotlin y Android Jetpack.
-							</p>
-							<ul>
-								<li>
-									<a href="https://github.com/andreandyp/TT-WebApp"
-										>Repositorio App Web</a
+						<div class="card">
+							<header class="card-header">
+								<p class="card-header-title has-text-weight-normal">
+									<a class="is-size-4" href="http://axdecor.herokuapp.com"
+										>AXDecor</a
 									>
-								</li>
-								<li>
-									<a href="https://github.com/andreandyp/TT-AndroidApp"
-										>Repositorio App Android</a
-									>
-								</li>
-							</ul>
-							<span class="tag is-info">Estado: en espera</span>
+								</p>
+								<a
+									class="card-header-icon is-hidden-desktop"
+									onclick="toggleCard(this)"
+								>
+									<span class="icon is-large is-pulled-right">
+										<i class="fas fa-angle-down fa-2x"></i>
+									</span>
+								</a>
+							</header>
+							<div class="card-content is-hidden-mobile">
+								<p>
+									Una aplicación para el sistema Android con realidad aumentada
+									para decoración de interiores. La aplicación ofrece la
+									posibilidad de insertar muebles, adornos y más en cualquier
+									habitación gracias a la realidad aumentada. Permite contactar
+									con los proveedores de los productos, así como hacer un
+									presupuesto con los productos usados.
+								</p>
+								<br />
+								<p>
+									Desarrollada en conjunto con 2 compañeros de mi carrera durante
+									1 año, fue nuestro proyecto de titulación de la carrera. Fue
+									desarrollada usando ARCore, Kotlin y Android Jetpack.
+								</p>
+								<ul>
+									<li>
+										<a href="https://github.com/andreandyp/TT-WebApp"
+											>Repositorio App Web</a
+										>
+									</li>
+									<li>
+										<a href="https://github.com/andreandyp/TT-AndroidApp"
+											>Repositorio App Android</a
+										>
+									</li>
+								</ul>
+								<span class="tag is-info">Estado: en espera</span>
+							</div>
 						</div>
 					</div>
 					<div class="column">
-						<div class="box">
-							<a href="https://github.com/andreandyp/dias" class="is-size-4"
-								>¡Días!</a
-							>
-							<p>
-								Una app para Android que permite establecer alarmas con respecto a
-								la hora del amanecer local. Permite personalizar el tono de la
-								alarma, la hora con respecto al amanecer y el tiempo para posponer
-								la alarma. También lleva un registro de las veces que se pospone la
-								alarma.
-							</p>
-							<br />
-							<p>
-								La app la desarrollé yo solo, está desarrollada con Kotlin y Android
-								Jetpack.
-							</p>
-							<span class="tag is-info">Estado: en desarollo</span>
+						<div class="card">
+							<header class="card-header">
+								<p class="card-header-title has-text-weight-normal">
+									<a href="https://github.com/andreandyp/dias" class="is-size-4"
+										>¡Días!
+									</a>
+								</p>
+								<a
+									class="card-header-icon is-hidden-desktop"
+									onclick="toggleCard(this)"
+								>
+									<span class="icon is-large is-pulled-right">
+										<i class="fas fa-angle-down fa-2x"></i>
+									</span>
+								</a>
+							</header>
+
+							<div class="card-content is-hidden-mobile">
+								<p>
+									Una app para Android que permite establecer alarmas con respecto
+									a la hora del amanecer local. Permite personalizar el tono de la
+									alarma, la hora con respecto al amanecer y el tiempo para
+									posponer la alarma. También lleva un registro de las veces que
+									se pospone la alarma.
+								</p>
+								<br />
+								<p>
+									La app la desarrollé yo solo, está desarrollada con Kotlin y
+									Android Jetpack.
+								</p>
+								<span class="tag is-info">Estado: en desarollo</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -132,13 +188,11 @@
 					vez que me siento inspirado a hacerlo.
 				</p>
 				<br />
-				<div class="columns">
+				<div class="columns is-multiline is-mobile">
 					<div class="column">
 						<div class="box has-text-centered">
-							<p class="is-size-4">
-								<a href="https://dev.to/andreandyp">Escribo en DEV.to</a>
-							</p>
-							<a href="https://dev.to/andreandyp" class="has-text-black">
+							<a href="https://dev.to/andreandyp">
+								<p class="is-size-4">Escribo en DEV.to</p>
 								<span class="icon is-large">
 									<i class="fab fa-dev fa-3x"></i>
 								</span>
@@ -147,12 +201,8 @@
 					</div>
 					<div class="column">
 						<div class="box has-text-centered">
-							<p class="is-size-4">
-								<a href="https://medium.com/@andreandyp">
-									También en Medium
-								</a>
-							</p>
-							<a href="https://medium.com/@andreandyp" class="has-text-black">
+							<a href="https://medium.com/@andreandyp">
+								<p class="is-size-4">Escribo en Medium</p>
 								<span class="icon is-large">
 									<i class="fab fa-medium fa-3x"></i>
 								</span>
@@ -168,8 +218,8 @@
 					Reviso mis redes constantemente, principalmente Twitter y mi correo electrónico.
 				</p>
 				<br />
-				<div class="columns has-text-centered">
-					<div class="column">
+				<div class="columns is-multiline is-mobile has-text-centered">
+					<div class="column is-6-mobile">
 						<div class="box">
 							<a href="https://twitter.com/AndreAndyP">
 								<span class="icon is-large">
@@ -179,7 +229,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="column">
+					<div class="column is-6-mobile">
 						<div class="box">
 							<a href="https://github.com/AndreAndyP">
 								<span class="icon is-large">
@@ -189,7 +239,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="column">
+					<div class="column is-6-mobile">
 						<div class="box">
 							<a href="https://www.linkedin.com/in/andreandyp/">
 								<span class="icon is-large">
@@ -298,7 +348,7 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<p><strong>Versión 1.1.0</strong> - <small>2020</small></p>
+			<p><strong>Versión 1.2.0</strong> - <small>2020</small></p>
 			<p>
 				Creada por André Michel Pozos Nieto.
 			</p>

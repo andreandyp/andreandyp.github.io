@@ -1,0 +1,273 @@
+{
+    "hero": {
+        "title": "Hello, I'm André Michel Pozos Nieto",
+        "subtitle": "Android Developer {'|'} Computer systems engineer",
+        "languages": ["English", "Spanish"],
+        "themes": ["Light", "Dark", "System"]
+    },
+    "about": {
+        "title": "About me",
+        "description1": "I am an Android developer with experience in the platform since 2019. I have worked on multiple personal projects, as well as worked on different features of many Android apps since 2021. I have worked developing apps for companies in the financial and entertainment sectors.",
+        "description2": "I graduated from the Instituto Politécnico Nacional with a degree in Computer Systems Engineering and since then I have not stopped studying and learning every day. I love to keep up to date with new technologies, as well as getting involved in other areas besides Android development.",
+        "imageAlt": "André Michel Pozos Nieto's picture"
+    },
+    "work": {
+        "title": "Work experience",
+        "current": "Current",
+        "accomplishments": "Accomplishments",
+        "jobs": [
+            {
+                "startDate": "September 2024",
+                "endDate": null,
+                "icon": "mdi-ferry",
+                "title": "Globant - Carnival Corporation",
+                "description": "Working on a brand new project currently in development.",
+                "achievements": []
+            },
+            {
+                "startDate": "June 2021",
+                "endDate": "August 2024",
+                "icon": "mdi-bank",
+                "title": "Globant - Financial institution",
+                "description": "Developed multiple features for a financial institution app, as well as a visual and functional upgrade to several previously implemented features. All of these features are currently in production.",
+                "achievements": [
+                    "Involved from start to finish in a revamp and fix of a feature that included multiple screens with multiple alternate flows, as working with multiple developers, by generating thousands of new product purchases used by thousands of new and existing users.",
+                    "Implemented a modern UI component from scratch based on new UX requirements, using only the legacy Android view system, and increasing retention in the onboarding process for a new product.",
+                    "Actively participated along with several Android developers in creating and improving the source code of multiple modules and features, decreasing the number of requested changes in the Pull Requests of the code repository."
+                ]
+            },
+            {
+                "startDate": "January 2019",
+                "endDate": "December 2019",
+                "icon": "mdi-school",
+                "title": "Instituto Politécnico Nacional",
+                "description": "Developed a final project along with a team for the graduation process of my engineering degree, which involved a year of work on an Android app for interior decoration with augmented reality.",
+                "achievements": [
+                    "Designed the general architecture of the system which involves: the Android app, a web page, a Firebase Cloud Storage instance, a Node.js server and a PostreSQL database, the latter deployed on Heroku.",
+                    "Involved in the development of the application server, as well as the deployment of the server, the database, and the Firebase Cloud Storage instance.",
+                    "Co-developed the Android app including: the app architecture, multiple screens, and the communication with the system back-end."
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "My personal projects",
+        "technologies": "Stack",
+        "features": "Features",
+        "fuegograma": {
+            "title": "Fuegograma",
+            "description": "An Instagram-like app where you can upload your photos and share them with your friends. You can like photos, comment on them and follow other people.",
+            "images": [
+                "Start screen",
+                "Credential Manager API",
+                "User profile",
+                "Feed",
+                "Create a post"
+            ],
+            "technologies": {
+                "features": [
+                    {
+                        "name": "Jetpack Compose UI tests",
+                        "icon": "mdi-ab-testing"
+                    },
+                    {
+                        "name": "Multi-module app",
+                        "icon": "mdi-view-module"
+                    },
+                    {
+                        "name": "Remote config",
+                        "icon": "mdi-cog-refresh"
+                    },
+                    {
+                        "name": "Autofill passwords",
+                        "icon": "mdi-account-key"
+                    },
+                    {
+                        "name": "Reactive programming",
+                        "icon": "mdi-atom"
+                    }
+                ],
+                "stack": [
+                    {
+                        "name": "Jetpack Compose",
+                        "icon": "mdi-cube"
+                    },
+                    {
+                        "name": "Firebase",
+                        "icon": "mdi-firebase"
+                    },
+                    {
+                        "name": "Material You",
+                        "icon": "mdi-material-design"
+                    },
+                    {
+                        "name": "CameraX",
+                        "icon": "mdi-camera-enhance"
+                    },
+                    {
+                        "name": "Work Manager",
+                        "icon": "mdi-file-sync"
+                    }
+                ]
+            }
+        },
+        "axdecorx": {
+            "title": "AXDecor 2",
+            "description": "Augmented reality app for interior design. Allows you to visualize furniture, decorative items and paintings in your home before purchasing them. A technical and functional improvement to my final project for my engineering degree.",
+            "images": [
+                "AR scene",
+                "Models catalog",
+                "Painting details",
+                "Scene with different light temperatures",
+                "Budget details"
+            ],
+            "technologies": {
+                "features": [
+                    {
+                        "name": "Dependency injection",
+                        "icon": "mdi-needle"
+                    },
+                    {
+                        "name": "Unit Testing",
+                        "icon": "mdi-test-tube"
+                    },
+                    {
+                        "name": "MVVM architecture",
+                        "icon": "mdi-floor-plan"
+                    },
+                    {
+                        "name": "Offline first",
+                        "icon": "mdi-cloud-off"
+                    },
+                    {
+                        "name": "PDF file generation",
+                        "icon": "mdi-file-pdf-box"
+                    }
+                ],
+                "stack": [
+                    {
+                        "name": "ARCore",
+                        "icon": "mdi-augmented-reality"
+                    },
+                    {
+                        "name": "Hilt",
+                        "icon": "mdi-knife-military"
+                    },
+                    {
+                        "name": "Jetpack Compose",
+                        "icon": "mdi-cube"
+                    },
+                    {
+                        "name": "Room",
+                        "icon": "mdi-database"
+                    },
+                    {
+                        "name": "Firebase",
+                        "icon": "mdi-firebase"
+                    }
+                ]
+            }
+        },
+        "dias": {
+            "title": "Días",
+            "description": "An app that lets you wake up at the sunrise time of the place where you live. You can customize the alarm with a ringtone you want and choose whether you want your phone to vibrate, as well as set an offset to the sunrise time.",
+            "images": [
+                "Main screen",
+                "Settings screen",
+                "Alarm off"
+            ],
+            "technologies": {
+                "features": [
+                    {
+                        "name": "Background sync",
+                        "icon": "mdi-sync"
+                    },
+                    {
+                        "name": "Offline first",
+                        "icon": "mdi-cloud-off"
+                    },
+                    {
+                        "name": "Alarm Manager",
+                        "icon": "mdi-alarm"
+                    },
+                    {
+                        "name": "Material You",
+                        "icon": "mdi-material-design"
+                    },
+                    {
+                        "name": "Location detection",
+                        "icon": "mdi-crosshairs-gps"
+                    }
+                ],
+                "stack": [
+                    {
+                        "name": "Jetpack Compose",
+                        "icon": "mdi-cube"
+                    },
+                    {
+                        "name": "DataStore",
+                        "icon": "mdi-database"
+                    },
+                    {
+                        "name": "Room",
+                        "icon": "mdi-database"
+                    },
+                    {
+                        "name": "Retrofit",
+                        "icon": "mdi-download-network"
+                    },
+                    {
+                        "name": "Work Manager",
+                        "icon": "mdi-file-sync"
+                    }
+                ]
+            }
+        }
+    },
+    "more": {
+        "title": "More experience",
+        "courses": "Completed courses",
+        "articles": "Tech articles",
+        "talks": "Tech talks",
+        "coursesList": [
+            {
+                "name": "Platzi courses",
+                "url": "https://platzi.com/p/andreandyp/"
+            },
+            {
+                "name": "Hands-on labs on Qwiklabs (Google Cloud Platform)",
+                "url": "https://www.qwiklabs.com/public_profiles/4045c116-84b2-4881-9bbc-c3d64deb0f73"
+            },
+            {
+                "name": "Kotlin Coroutines and Flow for Android Development",
+                "url": "https://www.udemy.com/course/coroutines-on-android/"
+            }
+        ],
+        "articlesList": [
+            {
+                "name": "(Spanish only) Improving an Android responsive app",
+                "url": "https://medium.com/@andreandyp/mejorando-una-app-de-android-responsiva-90d1df283256"
+            },
+            {
+                "name": "(Spanish only) From qualifiers to Window size classes — (re) implementing an Android responsive app",
+                "url": "https://medium.com/@andreandyp/de-qualifiers-a-window-size-classes-re-implementando-una-app-responsiva-en-android-4fb94dbf0a6b"
+            }
+        ],
+        "talksList": [
+            {
+                "name": "Best practices on Android week (at Globant)",
+                "url": null
+            },
+            {
+                "name": "Kotlin's internal modifier (En Globant)",
+                "url": null
+            }
+        ]
+    },
+    "copyright": {
+        "text": "© 2025 André Michel Pozos Nieto. All rights reserved.",
+        "tools": "Powered by Vue.js, Vite and Vuetify. Icons from Font Awesome and Material Design Icons",
+        "version": "Version {0}",
+        "repo": "Project repo"
+    }
+}

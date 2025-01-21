@@ -1,0 +1,273 @@
+{
+    "hero": {
+        "title": "Hola, soy André Michel Pozos Nieto",
+        "subtitle": "Desarrollador Android {'|'} Ingeniero en sistemas computacionales",
+        "languages": ["Inglés", "Español"],
+        "themes": ["Claro", "Oscuro", "Sistema"]
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "description1": "Soy un desarrollador de Android con experiencia en la plataforma desde el año 2019. He realizado múltiples proyectos personales, así como trabajado en un diferentes características de varias aplicaciones de Android desde el año 2021. He trabajado desarrollando apps para empresas del ramo financiero y de entretenimiento.",
+        "description2": "Me gradué del Instituto Politécnico Nacional como Ingeniero en Sistemas Computaciones y desde entonces no he parado de estudiar ni de aprender cada día. Me gusta estar al día con las nuevas tecnologías, así como involucrarme en otras áreas además del desarrollo en Android.",
+        "imageAlt": "Foto de André Michel Pozos Nieto"
+    },
+    "work": {
+        "title": "Experiencia laboral",
+        "current": "Presente",
+        "accomplishments": "Logros",
+        "jobs": [
+            {
+                "startDate": "Septiembre 2024",
+                "endDate": null,
+                "icon": "mdi-ferry",
+                "title": "Globant - Carnival Corporation",
+                "description": "Trabajando en un nuevo proyecto actualmente en desarrollo.",
+                "achievements": []
+            },
+            {
+                "startDate": "Junio 2021",
+                "endDate": "Agosto 2024",
+                "icon": "mdi-bank",
+                "title": "Globant - Institución financiera",
+                "description": "Desarrollé múltiples características para una app de una institución financiera, así como una actualización visual y funcional a diferentes características implementadas previamente. Todas estas características están actualmente en producción.",
+                "achievements": [
+                    "Me involucré de principio a fin en la modernización y corrección de una característica que incluía múltiples pantallas con múltiples flujos alternativos, trabajando con múltiples personas desarradoras, generando miles de contrataciones de nuevos productos usados por miles de personas usuarias nuevas y existentes.",
+                    "Implementé desde cero un componente de UI moderno con base en nuevos requisitos de experiencia de usuario, utilizando únicamente el sistema de vistas heredado de Android, aumentando la retención en el proceso de contratación de un nuevo producto.",
+                    "Participé activamente con varias personas desarrolladoras Android en la mejora y creación de código fuente de múltiples módulos y características, disminuyendo la cantidad de cambios solicitados en los Pull Request del repositorio de código."
+                ]
+            },
+            {
+                "startDate": "Enero 2019",
+                "endDate": "Diciembre 2019",
+                "icon": "mdi-school",
+                "title": "Instituto Politécnico Nacional",
+                "description": "Desarrollé en equipo un trabajo final para el proceso de titulación de mi carrera de ingeniería que invoucró un año de trabajo en una app de Android de decoración de interiores con realidad aumentada.",
+                "achievements": [
+                    "Diseñé la arquitectura general del sistema el cuál involucra: la app de Android, una página web, una instancia de Firebase Cloud Storage, un servidor Node.js y una base de datos en PostreSQL, estos últimos desplegados en Heroku.",
+                    "Me involucré en el desarrollo del servidor de la aplicación, así como en el despliegue del servidor, la base de datos y la instancia de Firebase Cloud Storage.",
+                    "Desarrollé en conjunto la app de Android incluyendo: la arquitectura de la app, múltiples pantallas y la comunicación con el back-end del sistema."
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Mis proyectos personales",
+        "technologies": "Tecnologías utilizadas",
+        "features": "Características",
+        "fuegograma": {
+            "title": "Fuegograma",
+            "description": "Una clon de Instagram, donde puedes subir tus fotos y compartirlas con tus amistades. Puedes darle \"me gusta\" a fotos, comentarlas y seguir a otras personas.",
+            "images": [
+                "Pantalla inicial",
+                "API de Credential Manager",
+                "Perfil de usuario",
+                "Feed de fotos",
+                "Crear publicación"
+            ],
+            "technologies": {
+                "features": [
+                    {
+                        "name": "Pruebas de UI de Jetpack Compose",
+                        "icon": "mdi-ab-testing"
+                    },
+                    {
+                        "name": "Configuración remota",
+                        "icon": "mdi-cog-refresh"
+                    },
+                    {
+                        "name": "App multi-módulo",
+                        "icon": "mdi-view-module"
+                    },
+                    {
+                        "name": "Programación reactiva",
+                        "icon": "mdi-atom"
+                    },
+                    {
+                        "name": "Autorellenado de contraseñas",
+                        "icon": "mdi-account-key"
+                    }
+                ],
+                "stack": [
+                    {
+                        "name": "Jetpack Compose",
+                        "icon": "mdi-cube"
+                    },
+                    {
+                        "name": "Firebase",
+                        "icon": "mdi-firebase"
+                    },
+                    {
+                        "name": "Material You",
+                        "icon": "mdi-material-design"
+                    },
+                    {
+                        "name": "CameraX",
+                        "icon": "mdi-camera-enhance"
+                    },
+                    {
+                        "name": "Work Manager",
+                        "icon": "mdi-file-sync"
+                    }
+                ]
+            }
+        },
+        "axdecorx": {
+            "title": "AXDecor 2",
+            "description": "Aplicación de decoración de interiores con realidad aumentada. Te permite visualizar muebles, elementos decorativos y pinturas en tu hogar antes de comprarlos. Una mejora técnica y funcional a mi proyecto final de titulación de mi carrera de ingeniería.",
+            "images": [
+                "Escena de realidad aumentada",
+                "Catálogo de muebles",
+                "Información de pinturas",
+                "Escena con diferentes temperaturas de luz",
+                "Cotización de muebles"
+            ],
+            "technologies": {
+                "features": [
+                    {
+                        "name": "Inyección de dependencias",
+                        "icon": "mdi-needle"
+                    },
+                    {
+                        "name": "Pruebas unitarias",
+                        "icon": "mdi-test-tube"
+                    },
+                    {
+                        "name": "Uso sin conexión",
+                        "icon": "mdi-cloud-off"
+                    },
+                    {
+                        "name": "Generación de PDF",
+                        "icon": "mdi-file-pdf-box"
+                    },
+                    {
+                        "name": "Patrón de arquitectura MVVM",
+                        "icon": "mdi-floor-plan"
+                    }
+                ],
+                "stack": [
+                    {
+                        "name": "ARCore",
+                        "icon": "mdi-augmented-reality"
+                    },
+                    {
+                        "name": "Hilt",
+                        "icon": "mdi-knife-military"
+                    },
+                    {
+                        "name": "Jetpack Compose",
+                        "icon": "mdi-cube"
+                    },
+                    {
+                        "name": "Room",
+                        "icon": "mdi-database"
+                    },
+                    {
+                        "name": "Firebase",
+                        "icon": "mdi-firebase"
+                    }
+                ]
+            }
+        },
+        "dias": {
+            "title": "Días",
+            "description": "Una app que te permite despertar a la hora del amanecer del lugar donde vives. Puedes personalizar la alarma con el tono que quieras y escoger si quieres que el telefóno vibre, así como añadir un pequeño retraso/adelanto con respecto a la hora del amanecer.",
+            "images": [
+                "Pantalla de inicio",
+                "Pantalla de configuración",
+                "Alarma sonando"
+            ],
+            "technologies": {
+                "features": [
+                    {
+                        "name": "Sincronización en el fondo",
+                        "icon": "mdi-sync"
+                    },
+                    {
+                        "name": "Uso sin conexión",
+                        "icon": "mdi-cloud-off"
+                    },
+                    {
+                        "name": "Alarm Manager",
+                        "icon": "mdi-alarm"
+                    },
+                    {
+                        "name": "Material You",
+                        "icon": "mdi-material-design"
+                    },
+                    {
+                        "name": "Detección de ubicación",
+                        "icon": "mdi-crosshairs-gps"
+                    }
+                ],
+                "stack": [
+                    {
+                        "name": "Jetpack Compose",
+                        "icon": "mdi-cube"
+                    },
+                    {
+                        "name": "DataStore",
+                        "icon": "mdi-database"
+                    },
+                    {
+                        "name": "Room",
+                        "icon": "mdi-database"
+                    },
+                    {
+                        "name": "Retrofit",
+                        "icon": "mdi-download-network"
+                    },
+                    {
+                        "name": "Work Manager",
+                        "icon": "mdi-file-sync"
+                    }
+                ]
+            }
+        }
+    },
+    "more": {
+        "title": "Más experiencia",
+        "courses": "Cursos completados",
+        "articles": "Artículos técnicos",
+        "talks": "Charlas técnicas",
+        "coursesList": [
+            {
+                "name": "Cursos y talleres en Platzi",
+                "url": "https://platzi.com/p/andreandyp/"
+            },
+            {
+                "name": "Laboratorios en Qwiklabs de Google Cloud",
+                "url": "https://www.qwiklabs.com/public_profiles/4045c116-84b2-4881-9bbc-c3d64deb0f73"
+            },
+            {
+                "name": "Corrutinas y Flows de Kotlin para el desarrollo de Android (en inglés)",
+                "url": "https://www.udemy.com/course/coroutines-on-android/"
+            }
+        ],
+        "articlesList": [
+            {
+                "name": "Mejorando una app de Android responsiva",
+                "url": "https://medium.com/@andreandyp/mejorando-una-app-de-android-responsiva-90d1df283256"
+            },
+            {
+                "name": "De qualifiers a Window size classes — (re) implementando una app responsiva en Android",
+                "url": "https://medium.com/@andreandyp/de-qualifiers-a-window-size-classes-re-implementando-una-app-responsiva-en-android-4fb94dbf0a6b"
+            }
+        ],
+        "talksList": [
+            {
+                "name": "Semana de buenas prácticas en Android (en Globant)",
+                "url": null
+            },
+            {
+                "name": "Modificador internal en Kotlin (en Globant)",
+                "url": null
+            }
+        ]
+    },
+    "copyright": {
+        "text": "© 2025 André Michel Pozos Nieto. Todos los derechos reservados.",
+        "tools": "Desarrollado con Vue.js, Vite y Vuetify. Íconos de Font Awesome y Material Design Icons",
+        "version": "Versión {0}",
+        "repo": "Repositorio del proyecto"
+    }
+}

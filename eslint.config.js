@@ -1,11 +1,9 @@
-/**
- * .eslint.js
- *
- * ESLint configuration file.
- */
-
 import pluginVue from "eslint-plugin-vue";
-import vueTsEslintConfig from "@vue/eslint-config-typescript";
+import { defineConfigWithVueTs, vueTsConfigs, configureVueProject } from '@vue/eslint-config-typescript'
+
+configureVueProject({
+  scriptLangs: ["ts"],
+});
 
 export default [
   {
@@ -17,10 +15,10 @@ export default [
     name: "app/files-to-ignore",
     ignores: ["**/dist/**", "**/dist-ssr/**", "**/coverage/**"],
   },
-
-  ...pluginVue.configs["flat/recommended"],
-  ...vueTsEslintConfig(),
-
+  defineConfigWithVueTs(
+    pluginVue.configs["flat/recommended"],
+    vueTsConfigs.recommended,
+  ),
   {
     rules: {
       "@typescript-eslint/no-unused-expressions": [
@@ -33,6 +31,6 @@ export default [
       "vue/multi-word-component-names": "off",
       "quotes": ["error", "double"],
       "semi": ["error", "always"],
-    }
-  }
+    },
+  },
 ];

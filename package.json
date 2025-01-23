@@ -1,7 +1,7 @@
 {
   "name": "andreandyp.github.io",
   "private": true,
-  "version": "2.0.0-rc01",
+  "version": "2.0.0-rc02",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,9 +14,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
-    "@fortawesome/fontawesome-free": "^6.7.2",
     "@intlify/unplugin-vue-i18n": "^6.0.3",
-    "@mdi/font": "^7.4.47",
+    "@mdi/js": "^7.4.47",
+    "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.10.7",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/eslint-config-typescript": "^14.3.0",

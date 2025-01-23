@@ -1,6 +1,6 @@
 <template lang="pug">
 v-container
-    SectionTitle(:title="$t('about.title')" icon="mdi-information")
+    SectionTitle(:title="$t('about.title')" :icon="mdiInformation")
     v-sheet.pa-7(elevation="2" border)
         v-row(align="center")
             v-col(cols="12" sm="6" align="center")
@@ -8,14 +8,13 @@ v-container
             v-col(cols="12" sm="6")
                 v-row
                     v-col(align-self="start")
-                        p {{ $t("about.description1") }}
+                        p.text-body-1 {{ $t("about.description1") }}
                 v-row
                     v-col(align-self="end")
-                        p {{ $t("about.description2") }}
+                        p.text-body-1 {{ $t("about.description2") }}
 </template>
 
 <script setup lang="ts">
-// @ts-expect-error TS and pug problem
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import SectionTitle from "@/components/SectionTitle.vue";
+import { mdiInformation } from "@mdi/js";
 </script>

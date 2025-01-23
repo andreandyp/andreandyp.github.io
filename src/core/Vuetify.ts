@@ -1,8 +1,7 @@
 import { type ThemeDefinition } from "vuetify";
 import { createVuetify } from "vuetify";
-import { mdi } from "vuetify/iconsets/mdi";
+import { mdi } from "vuetify/iconsets/mdi-svg";
 import * as components from "vuetify/components";
-import "@mdi/font/css/materialdesignicons.css";
 // @ts-expect-error some random type error with vuetify styles
 import "vuetify/styles";
 
@@ -34,7 +33,7 @@ const pageThemeDark: ThemeDefinition = {
         primary: redAccent4,
         secondary: deepPurpleLighten3,
         "on-primary": white,
-        "on-secondary": white,
+        "on-secondary": black,
         background: black,
         "on-background": white,
         error: hexRed,

@@ -2,6 +2,9 @@
     "hero": {
         "title": "Hello, I'm André Michel Pozos Nieto",
         "subtitle": "Android Developer {'|'} Computer systems engineer",
+        "github": "Go to my GitHub",
+        "linkedin": "Go to my LinkedIn profile",
+        "email": "Send me an email",
         "languages": ["English", "Spanish"],
         "themes": ["Light", "Dark", "System"]
     },
@@ -54,6 +57,8 @@
         "title": "My personal projects",
         "technologies": "Stack",
         "features": "Features",
+        "previousScreenshot": "See previous screenshot",
+        "nextScreenshot": "See next screenshot",
         "fuegograma": {
             "title": "Fuegograma",
             "description": "An Instagram-like app where you can upload your photos and share them with your friends. You can like photos, comment on them and follow other people.",
@@ -235,7 +240,7 @@
                 "url": "https://platzi.com/p/andreandyp/"
             },
             {
-                "name": "Hands-on labs on Qwiklabs (Google Cloud Platform)",
+                "name": "Qwiklabs' Hands-on labs (Google Cloud Platform)",
                 "url": "https://www.qwiklabs.com/public_profiles/4045c116-84b2-4881-9bbc-c3d64deb0f73"
             },
             {
@@ -266,7 +271,7 @@
     },
     "copyright": {
         "text": "© 2025 André Michel Pozos Nieto. All rights reserved.",
-        "tools": "Powered by Vue.js, Vite and Vuetify. Icons from Font Awesome and Material Design Icons",
+        "tools": "Powered by Vue.js, Vite and Vuetify. Icons Material Design Icons",
         "version": "Version {0}",
         "repo": "Project repo"
     }

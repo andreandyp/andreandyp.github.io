@@ -2,38 +2,44 @@
 v-container
     SectionTitle(
         :title="$t('work.title')"
-        icon="mdi-briefcase"
+        :icon="mdiBriefcase"
     )
     v-sheet.pa-4(elevation="2" border)
         v-timeline(side="end" align="start")
             v-timeline-item(v-for="job in jobs" :key="job.title" dot-color="primary" :icon="job.icon" fill-dot)
                 template(v-slot:opposite)
-                    span.d-none.d-sm-flex {{ job.startDate }} - {{ job.endDate ?? $t('work.current') }}
-                h3 {{ job.title }}
-                p.d-flex.d-sm-none {{ job.startDate }} - {{ job.endDate ?? $t('work.current') }}
-                p.py-3 {{ job.description }}
-                v-expansion-panels(v-if="job.achievements.length > 0" variant="default" expand-icon="mdi-menu-down" collapse-icon="mdi-menu-up")
+                    p.text-body-1.d-none.d-sm-flex {{ job.startDate }} - {{ job.endDate ?? $t('work.current') }}
+                h4.text-h6 {{ job.title }}
+                p.text-body-1.d-flex.d-sm-none {{ job.startDate }} - {{ job.endDate ?? $t('work.current') }}
+                p.text-body-1.py-3 {{ job.description }}
+                v-expansion-panels(v-if="job.achievements.length > 0" variant="default" :expand-icon="mdiMenuDown" :collapse-icon="mdiMenuUp")
                     v-expansion-panel.border-sm(elevation="4")
                         v-expansion-panel-title
-                            v-icon(icon="mdi-trophy-variant" color="secondary")
-                            span.px-2 {{ $t('work.accomplishments') }}
+                            v-icon(:icon="mdiMedal" color="secondary")
+                            p.text-overline.px-2 {{ $t('work.accomplishments') }}
                         v-expansion-panel-text
                             ul
-                                li(v-for="achievement in job.achievements" :key="achievement") {{ achievement }}
+                                li(v-for="achievement in job.achievements" :key="achievement")
+                                    p.text-body-2.text-sm-body-1 {{ achievement }}
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
-// @ts-expect-error TS and pug problem
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { mdiBriefcase, mdiMedal, mdiMenuDown, mdiMenuUp, } from "@mdi/js";
 import SectionTitle from "@/components/SectionTitle.vue";
 import type { Job } from "@/types/Job";
+import { resolveIcon } from "@/utils/ResolveIcons.ts";
 
 const { tm } = useI18n();
 const jobs = ref<Job[]>([]);
 
-onMounted(() => {
-    jobs.value = tm("work.jobs");
+onMounted(async () => {
+    const mapIcons = (tm("work.jobs") as Job[]).map(async (element) => {
+        element.icon = await resolveIcon(element.icon);
+        return element;
+    });
+
+    jobs.value = await Promise.all(mapIcons);
 });
 </script>

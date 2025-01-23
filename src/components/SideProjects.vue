@@ -107,7 +107,7 @@ async function updateFeatures(projectName: string) {
 
 function resolveImage(currentImageIndex: number): string {
     return new URL(
-        `../assets/images/projects/${projectName.value}${currentImageIndex}.png`,
+        `../assets/images/projects/${projectName.value}${currentImageIndex}.webp`,
         import.meta.url
     ).href;
 }

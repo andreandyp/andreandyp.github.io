@@ -22,7 +22,7 @@
             {
                 "startDate": "Septiembre 2024",
                 "endDate": null,
-                "icon": "mdi-ferry",
+                "icon": "mdiFerry",
                 "title": "Globant - Carnival Corporation",
                 "description": "Trabajando en un nuevo proyecto actualmente en desarrollo.",
                 "achievements": []
@@ -30,7 +30,7 @@
             {
                 "startDate": "Junio 2021",
                 "endDate": "Agosto 2024",
-                "icon": "mdi-bank",
+                "icon": "mdiBank",
                 "title": "Globant - Institución financiera",
                 "description": "Desarrollé múltiples características para una app de una institución financiera, así como una actualización visual y funcional a diferentes características implementadas previamente. Todas estas características están actualmente en producción.",
                 "achievements": [
@@ -42,7 +42,7 @@
             {
                 "startDate": "Enero 2019",
                 "endDate": "Diciembre 2019",
-                "icon": "mdi-school",
+                "icon": "mdiSchool",
                 "title": "Instituto Politécnico Nacional",
                 "description": "Desarrollé en equipo un trabajo final para el proceso de titulación de mi carrera de ingeniería que invoucró un año de trabajo en una app de Android de decoración de interiores con realidad aumentada.",
                 "achievements": [
@@ -73,45 +73,45 @@
                 "features": [
                     {
                         "name": "Pruebas de UI de Jetpack Compose",
-                        "icon": "mdi-ab-testing"
+                        "icon": "mdiAbTesting"
                     },
                     {
                         "name": "Configuración remota",
-                        "icon": "mdi-cog-refresh"
+                        "icon": "mdiCogRefresh"
                     },
                     {
                         "name": "App multi-módulo",
-                        "icon": "mdi-view-module"
+                        "icon": "mdiViewModule"
                     },
                     {
                         "name": "Programación reactiva",
-                        "icon": "mdi-atom"
+                        "icon": "mdiAtom"
                     },
                     {
                         "name": "Autorellenado de contraseñas",
-                        "icon": "mdi-account-key"
+                        "icon": "mdiAccountKey"
                     }
                 ],
                 "stack": [
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdi-cube"
+                        "icon": "mdiCube"
                     },
                     {
                         "name": "Firebase",
-                        "icon": "mdi-firebase"
+                        "icon": "mdiFirebase"
                     },
                     {
                         "name": "Material You",
-                        "icon": "mdi-material-design"
+                        "icon": "mdiMaterialDesign"
                     },
                     {
                         "name": "CameraX",
-                        "icon": "mdi-camera-enhance"
+                        "icon": "mdiCameraEnhance"
                     },
                     {
                         "name": "Work Manager",
-                        "icon": "mdi-file-sync"
+                        "icon": "mdiFileSync"
                     }
                 ]
             }
@@ -130,45 +130,45 @@
                 "features": [
                     {
                         "name": "Inyección de dependencias",
-                        "icon": "mdi-needle"
+                        "icon": "mdiNeedle"
                     },
                     {
                         "name": "Pruebas unitarias",
-                        "icon": "mdi-test-tube"
+                        "icon": "mdiTestTube"
                     },
                     {
                         "name": "Uso sin conexión",
-                        "icon": "mdi-cloud-off"
+                        "icon": "mdiCloudOff"
                     },
                     {
                         "name": "Generación de PDF",
-                        "icon": "mdi-file-pdf-box"
+                        "icon": "mdiFilePdfBox"
                     },
                     {
                         "name": "Patrón de arquitectura MVVM",
-                        "icon": "mdi-floor-plan"
+                        "icon": "mdiFloorPlan"
                     }
                 ],
                 "stack": [
                     {
                         "name": "ARCore",
-                        "icon": "mdi-augmented-reality"
+                        "icon": "mdiAugmentedReality"
                     },
                     {
                         "name": "Hilt",
-                        "icon": "mdi-knife-military"
+                        "icon": "mdiKnifeMilitary"
                     },
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdi-cube"
+                        "icon": "mdiCube"
                     },
                     {
                         "name": "Room",
-                        "icon": "mdi-database"
+                        "icon": "mdiDatabase"
                     },
                     {
                         "name": "Firebase",
-                        "icon": "mdi-firebase"
+                        "icon": "mdiFirebase"
                     }
                 ]
             }
@@ -185,45 +185,45 @@
                 "features": [
                     {
                         "name": "Sincronización en el fondo",
-                        "icon": "mdi-sync"
+                        "icon": "mdiSync"
                     },
                     {
                         "name": "Uso sin conexión",
-                        "icon": "mdi-cloud-off"
+                        "icon": "mdiCloudOff"
                     },
                     {
                         "name": "Alarm Manager",
-                        "icon": "mdi-alarm"
+                        "icon": "mdiAlarm"
                     },
                     {
                         "name": "Material You",
-                        "icon": "mdi-material-design"
+                        "icon": "mdiMaterialDesign"
                     },
                     {
                         "name": "Detección de ubicación",
-                        "icon": "mdi-crosshairs-gps"
+                        "icon": "mdiCrosshairsGps"
                     }
                 ],
                 "stack": [
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdi-cube"
+                        "icon": "mdiCube"
                     },
                     {
                         "name": "DataStore",
-                        "icon": "mdi-database"
+                        "icon": "mdiDatabase"
                     },
                     {
                         "name": "Room",
-                        "icon": "mdi-database"
+                        "icon": "mdiDatabase"
                     },
                     {
                         "name": "Retrofit",
-                        "icon": "mdi-download-network"
+                        "icon": "mdiDownloadNetwork"
                     },
                     {
                         "name": "Work Manager",
-                        "icon": "mdi-file-sync"
+                        "icon": "mdiFileSync"
                     }
                 ]
             }

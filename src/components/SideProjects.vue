@@ -58,7 +58,7 @@ import type { Stack } from "@/types/Stack";
 import { resolveIcon } from "@/utils/ResolveIcons";
 import ExpansionPanel from "./side-projects/ExpansionPanel.vue";
 
-const { t, tm } = useI18n();
+const { t, tm, locale } = useI18n();
 const { mobile } = useDisplay();
 
 const projectTitle = ref("");
@@ -71,15 +71,23 @@ const imageDescriptions = ref([]);
 const currentImageIndex = ref(0);
 
 onMounted(async () => {
-    await updateCurrentProject();
-    if (!mobile.value) {
-        projectPanels.value = [0, 1];
-    }
+    await onInit();
 });
 
 watch(projectName, async () => {
     await updateCurrentProject();
 });
+
+watch(locale, async () => {
+    await onInit();
+});
+
+async function onInit() {
+    await updateCurrentProject();
+    if (!mobile.value) {
+        projectPanels.value = [0, 1];
+    }
+}
 
 async function updateCurrentProject() {
     projectTitle.value = t(`projects.${projectName.value}.title`);

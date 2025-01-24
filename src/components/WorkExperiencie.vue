@@ -24,22 +24,30 @@ v-container
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { mdiBriefcase, mdiMedal, mdiMenuDown, mdiMenuUp, } from "@mdi/js";
 import SectionTitle from "@/components/SectionTitle.vue";
 import type { Job } from "@/types/Job";
 import { resolveIcon } from "@/utils/ResolveIcons.ts";
 
-const { tm } = useI18n();
+const { tm, locale } = useI18n();
 const jobs = ref<Job[]>([]);
 
+watch(locale, async () => {
+    await onInit();
+});
+
 onMounted(async () => {
+    await onInit();
+});
+
+async function onInit() {
     const mapIcons = (tm("work.jobs") as Job[]).map(async (element) => {
         element.icon = await resolveIcon(element.icon);
         return element;
     });
 
     jobs.value = await Promise.all(mapIcons);
-});
+}
 </script>

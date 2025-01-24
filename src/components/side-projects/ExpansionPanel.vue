@@ -14,7 +14,6 @@ import type { Features } from '@/types/Features';
 import type { Stack } from '@/types/Stack';
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js';
 
-// mdiPuzzle
 defineProps<{
     title: string;
     icon: string;

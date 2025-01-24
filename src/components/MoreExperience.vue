@@ -29,10 +29,10 @@ v-container
 import SectionTitle from "@/components/SectionTitle.vue";
 import type { MoreExperienceElement } from "@/types/MoreExperienceElement";
 import { mdiCertificate, mdiFileCertificate, mdiFolderStar, mdiNewspaper, mdiNewspaperVariantMultiple, mdiPresentation, mdiPresentationPlay } from "@mdi/js";
-import { ref, onMounted, } from "vue";
+import { ref, onMounted, watch, } from "vue";
 import { useI18n } from "vue-i18n";
 import ExperienceCard from "./more-experience/ExperienceCard.vue";
-const { tm } = useI18n();
+const { tm, locale } = useI18n();
 
 const courses = ref<MoreExperienceElement[]>([]);
 
@@ -41,9 +41,17 @@ const articles = ref<MoreExperienceElement[]>([]);
 const talks = ref<MoreExperienceElement[]>([]);
 
 onMounted(() => {
+    onInit();
+});
+
+watch(locale, () => {
+    onInit();
+});
+
+function onInit() {
     courses.value = tm("more.coursesList");
     articles.value = tm("more.articlesList");
     talks.value = tm("more.talksList");
-});
+}
 
 </script>

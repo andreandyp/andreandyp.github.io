@@ -4,7 +4,7 @@ v-container
     v-sheet.pa-7(elevation="2" border)
         v-row(align="center")
             v-col(cols="12" sm="6" align="center")
-                v-img(src="@/assets/images/me.jpg" :alt="$t('about.imageAlt')" aspect-ratio="1/1" width="250")
+                v-img(src="@/assets/images/me.webp" :alt="$t('about.imageAlt')" aspect-ratio="1/1" width="250")
             v-col(cols="12" sm="6")
                 v-row
                     v-col(align-self="start")

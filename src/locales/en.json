@@ -5,6 +5,7 @@
         "github": "Go to my GitHub",
         "linkedin": "Go to my LinkedIn profile",
         "email": "Send me an email",
+        "coffee": "Support my content!",
         "languages": ["English", "Spanish"],
         "themes": ["Light", "Dark", "System"]
     },
@@ -273,6 +274,7 @@
         "text": "© 2025 André Michel Pozos Nieto. All rights reserved.",
         "tools": "Powered by Vue.js, Vite and Vuetify. Icons Material Design Icons",
         "version": "Version {0}",
+        "support": "Support all my content here!",
         "repo": "Project repo"
     }
 }

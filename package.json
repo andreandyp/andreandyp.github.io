@@ -1,7 +1,7 @@
 {
   "name": "andreandyp.github.io",
   "private": true,
-  "version": "2.0.2",
+  "version": "2.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,26 +13,26 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@intlify/unplugin-vue-i18n": "^6.0.4",
+    "@eslint/js": "^9.23.0",
+    "@intlify/unplugin-vue-i18n": "^6.0.5",
     "@mdi/js": "^7.4.47",
-    "@tsconfig/node22": "^22.0.0",
-    "@types/node": "^22.13.10",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.13.14",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/language-plugin-pug": "^2.2.8",
     "@vue/tsconfig": "^0.7.0",
-    "eslint": "^9.22.0",
+    "eslint": "^9.23.0",
     "eslint-plugin-vue": "^9.32.0",
     "eslint-plugin-vue-pug": "^0.6.2",
     "pug": "^3.0.3",
     "roboto-fontface": "^0.10.0",
     "typescript": "~5.8.2",
     "unplugin-vue-components": "^28.4.1",
-    "vite": "^6.2.2",
+    "vite": "^6.2.3",
     "vite-plugin-vuetify": "^2.1.0",
     "vue-i18n": "^11.1.2",
     "vue-tsc": "^2.2.8",
-    "vuetify": "^3.7.16"
+    "vuetify": "^3.7.19"
   }
 }

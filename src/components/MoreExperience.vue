@@ -4,10 +4,10 @@ v-container
     v-row
         v-col(cols="12" sm="4")
             ExperienceCard(
-                :card-title="$t('more.courses')"
-                :card-title-icon="mdiCertificate"
-                :elements="courses"
-                :elements-icon="mdiFileCertificate"
+                :card-title="$t('more.talks')"
+                :card-title-icon="mdiPresentationPlay"
+                :elements="talks"
+                :elements-icon="mdiPresentation"
             )
         v-col(cols="12" sm="4")
             ExperienceCard(
@@ -18,11 +18,11 @@ v-container
             )
         v-col(cols="12" sm="4")
             ExperienceCard(
-                :card-title="$t('more.talks')"
-                :card-title-icon="mdiPresentationPlay"
-                :elements="talks"
-                :elements-icon="mdiPresentation"
-            )
+                :card-title="$t('more.courses')"
+                :card-title-icon="mdiCertificate"
+                :elements="courses"
+                :elements-icon="mdiFileCertificate"
+                )
 </template>
 
 <script lang="ts" setup>

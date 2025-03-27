@@ -9,7 +9,12 @@ v-container
             v-btn(:icon="mdiGithub" :aria-label="$t('hero.github')" href="https://github.com/AndreAndyP" target="_blank" color="primary")
             v-btn(:icon="mdiLinkedin" :aria-label="$t('hero.linkedin')" href="https://www.linkedin.com/in/andreandyp" target="_blank" color="primary")
             v-btn(:icon="mdiAt" :aria-label="$t('hero.email')" @click="click64Icon" target="_blank" color="primary")
+            div(v-show="!showSupport")
+                v-btn(v-tooltip="$t('hero.coffee')" :icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="outlined" color="yellow" href="https://buymeacoffee.com/andreandyp" target="_blank")
         v-card-actions.d-none.d-sm-flex.justify-end
+            div.ms-2(v-show="showSupport")
+                v-btn(:prepend-icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="elevated" color="yellow" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('hero.coffee') }}
+            v-spacer
             v-menu(location="bottom")
                 template(v-slot:activator="{ props }")
                     v-btn(:append-icon="mdiTranslate" color="secondary" v-bind="props") {{ currentLocale }}
@@ -23,6 +28,9 @@ v-container
                     v-list-item(v-for="(theme, index) in availableThemes" @click="changeTheme(index)" link)
                         v-list-item-title {{ theme }}
         v-card-actions.d-flex.d-sm-none.justify-end
+            div.ms-2(v-show="showSupport")
+                v-btn(:prepend-icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="elevated" color="yellow" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('hero.coffee') }}
+            v-spacer
             v-menu(location="bottom")
                 template(v-slot:activator="{ props }")
                     v-btn(:icon="mdiTranslate" color="secondary" v-bind="props")
@@ -41,7 +49,7 @@ v-container
 import { ref, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { useTheme } from "vuetify";
-import { mdiGithub, mdiLinkedin, mdiAt, mdiTranslate, mdiThemeLightDark } from "@mdi/js";
+import { mdiGithub, mdiLinkedin, mdiAt, mdiTranslate, mdiThemeLightDark, mdiHandCoin } from "@mdi/js";
 import { name } from "../../package.json";
 import { type LanguageChooser } from "@/types/LanguageChooser.ts";
 
@@ -83,6 +91,8 @@ const currentLocale = computed(() =>
         .filter(value => locale.value.includes(value.code))[0]
         .text
 );
+
+const showSupport = computed(() => currentLocale.value.includes("En"));
 
 function click64Icon() {
     const character = String.fromCharCode(64);

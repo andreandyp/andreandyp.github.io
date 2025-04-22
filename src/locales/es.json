@@ -251,6 +251,10 @@
         ],
         "articlesList": [
             {
+                "name": "Permisos en Android - aprende a implementar el flujo completo",
+                "url": "https://medium.com/@andreandyp/permisos-en-android-aprende-a-implementar-el-flujo-completo-a5411bd14101"
+            },
+            {
                 "name": "Mejorando una app de Android responsiva",
                 "url": "https://medium.com/@andreandyp/mejorando-una-app-de-android-responsiva-90d1df283256"
             },

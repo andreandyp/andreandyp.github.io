@@ -99,7 +99,7 @@ async function updateCurrentProject() {
 
 async function updateStack(projectName: string) {
     const resolvedIcons = (tm(`projects.${projectName}.technologies.stack`) as Stack[]).map(async elem => {
-        elem.icon = await resolveIcon(elem.icon);
+        elem.icon = await resolveIcon(elem.iconName);
         return elem;
     });
     stack.value = await Promise.all(resolvedIcons);
@@ -107,7 +107,7 @@ async function updateStack(projectName: string) {
 
 async function updateFeatures(projectName: string) {
     const resolvedIcons = (tm(`projects.${projectName}.technologies.features`) as Features[]).map(async elem => {
-        elem.icon = await resolveIcon(elem.icon);
+        elem.icon = await resolveIcon(elem.iconName);
         return elem;
     });
     features.value = await Promise.all(resolvedIcons);

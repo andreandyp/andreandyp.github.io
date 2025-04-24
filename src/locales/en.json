@@ -11,7 +11,7 @@
     },
     "about": {
         "title": "About me",
-        "description1": "I am an Android developer with experience in the platform since 2019. I have worked on multiple personal projects, as well as worked on different features of many Android apps since 2021. I have worked developing apps for companies in the financial and entertainment sectors.",
+        "description1": "I am an Android developer with experience working on the platform since 2019. I have worked on multiple personal projects, as well as on various features of Android apps since 2021. I have worked developing apps for companies in the financial and entertainment sectors.",
         "description2": "I graduated from the Instituto Politécnico Nacional with a degree in Computer Systems Engineering and since then I have not stopped studying and learning every day. I love to keep up to date with new technologies, as well as getting involved in other areas besides Android development.",
         "imageAlt": "André Michel Pozos Nieto's picture"
     },
@@ -23,7 +23,7 @@
             {
                 "startDate": "September 2024",
                 "endDate": null,
-                "icon": "mdiFerry",
+                "iconName": "mdiFerry",
                 "title": "Globant - Carnival Corporation",
                 "description": "Working on a brand new project currently in development.",
                 "achievements": []
@@ -31,7 +31,7 @@
             {
                 "startDate": "June 2021",
                 "endDate": "August 2024",
-                "icon": "mdiBank",
+                "iconName": "mdiBank",
                 "title": "Globant - Financial institution",
                 "description": "Developed multiple features for a financial institution app, as well as a visual and functional upgrade to several previously implemented features. All of these features are currently in production.",
                 "achievements": [
@@ -43,11 +43,11 @@
             {
                 "startDate": "January 2019",
                 "endDate": "December 2019",
-                "icon": "mdiSchool",
+                "iconName": "mdiSchool",
                 "title": "Instituto Politécnico Nacional",
                 "description": "Developed a final project along with a team for the graduation process of my engineering degree, which involved a year of work on an Android app for interior decoration with augmented reality.",
                 "achievements": [
-                    "Designed the general architecture of the system which involves: the Android app, a web page, a Firebase Cloud Storage instance, a Node.js server and a PostreSQL database, the latter deployed on Heroku.",
+                    "Designed the general architecture of the system which involves: the Android app, a web page, a Firebase Cloud Storage instance, a Node.js server and a PostgreSQL database, the latter deployed on Heroku.",
                     "Involved in the development of the application server, as well as the deployment of the server, the database, and the Firebase Cloud Storage instance.",
                     "Co-developed the Android app including: the app architecture, multiple screens, and the communication with the system back-end."
                 ]
@@ -74,45 +74,45 @@
                 "features": [
                     {
                         "name": "Jetpack Compose UI tests",
-                        "icon": "mdiAbTesting"
+                        "iconName": "mdiAbTesting"
                     },
                     {
                         "name": "Multi-module app",
-                        "icon": "mdiViewModule"
+                        "iconName": "mdiViewModule"
                     },
                     {
                         "name": "Remote config",
-                        "icon": "mdiCogRefresh"
+                        "iconName": "mdiCogRefresh"
                     },
                     {
                         "name": "Autofill passwords",
-                        "icon": "mdiAccountKey"
+                        "iconName": "mdiAccountKey"
                     },
                     {
                         "name": "Reactive programming",
-                        "icon": "mdiAtom"
+                        "iconName": "mdiAtom"
                     }
                 ],
                 "stack": [
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdiCube"
+                        "iconName": "mdiCube"
                     },
                     {
                         "name": "Firebase",
-                        "icon": "mdiFirebase"
+                        "iconName": "mdiFirebase"
                     },
                     {
                         "name": "Material You",
-                        "icon": "mdiMaterialDesign"
+                        "iconName": "mdiMaterialDesign"
                     },
                     {
                         "name": "CameraX",
-                        "icon": "mdiCameraEnhance"
+                        "iconName": "mdiCameraEnhance"
                     },
                     {
                         "name": "Work Manager",
-                        "icon": "mdiFileSync"
+                        "iconName": "mdiFileSync"
                     }
                 ]
             }
@@ -131,45 +131,45 @@
                 "features": [
                     {
                         "name": "Dependency injection",
-                        "icon": "mdiNeedle"
+                        "iconName": "mdiNeedle"
                     },
                     {
                         "name": "Unit Testing",
-                        "icon": "mdiTestTube"
+                        "iconName": "mdiTestTube"
                     },
                     {
                         "name": "MVVM architecture",
-                        "icon": "mdiFloorPlan"
+                        "iconName": "mdiFloorPlan"
                     },
                     {
                         "name": "Offline first",
-                        "icon": "mdiCloudOff"
+                        "iconName": "mdiCloudOff"
                     },
                     {
                         "name": "PDF file generation",
-                        "icon": "mdiFilePdfBox"
+                        "iconName": "mdiFilePdfBox"
                     }
                 ],
                 "stack": [
                     {
                         "name": "ARCore",
-                        "icon": "mdiAugmentedReality"
+                        "iconName": "mdiAugmentedReality"
                     },
                     {
                         "name": "Hilt",
-                        "icon": "mdiKnifeMilitary"
+                        "iconName": "mdiKnifeMilitary"
                     },
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdiCube"
+                        "iconName": "mdiCube"
                     },
                     {
                         "name": "Room",
-                        "icon": "mdiDatabase"
+                        "iconName": "mdiDatabase"
                     },
                     {
                         "name": "Firebase",
-                        "icon": "mdiFirebase"
+                        "iconName": "mdiFirebase"
                     }
                 ]
             }
@@ -186,45 +186,45 @@
                 "features": [
                     {
                         "name": "Background sync",
-                        "icon": "mdiSync"
+                        "iconName": "mdiSync"
                     },
                     {
                         "name": "Offline first",
-                        "icon": "mdiCloudOff"
+                        "iconName": "mdiCloudOff"
                     },
                     {
                         "name": "Alarm Manager",
-                        "icon": "mdiAlarm"
+                        "iconName": "mdiAlarm"
                     },
                     {
                         "name": "Material You",
-                        "icon": "mdiMaterialDesign"
+                        "iconName": "mdiMaterialDesign"
                     },
                     {
                         "name": "Location detection",
-                        "icon": "mdiCrosshairsGps"
+                        "iconName": "mdiCrosshairsGps"
                     }
                 ],
                 "stack": [
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdiCube"
+                        "iconName": "mdiCube"
                     },
                     {
                         "name": "DataStore",
-                        "icon": "mdiDatabase"
+                        "iconName": "mdiDatabase"
                     },
                     {
                         "name": "Room",
-                        "icon": "mdiDatabase"
+                        "iconName": "mdiDatabase"
                     },
                     {
                         "name": "Retrofit",
-                        "icon": "mdiDownloadNetwork"
+                        "iconName": "mdiDownloadNetwork"
                     },
                     {
                         "name": "Work Manager",
-                        "icon": "mdiFileSync"
+                        "iconName": "mdiFileSync"
                     }
                 ]
             }
@@ -269,14 +269,14 @@
                 "url": null
             },
             {
-                "name": "Kotlin's internal modifier (En Globant)",
+                "name": "Kotlin's internal modifier (at Globant)",
                 "url": null
             }
         ]
     },
     "copyright": {
         "text": "© 2025 André Michel Pozos Nieto. All rights reserved.",
-        "tools": "Powered by Vue.js, Vite and Vuetify. Icons Material Design Icons",
+        "tools": "Powered by Vue.js, Vite and Vuetify. Icons from Material Design Icons",
         "version": "Version {0}",
         "support": "Support all my content here!",
         "repo": "Project repo"

@@ -11,7 +11,7 @@
     },
     "about": {
         "title": "Acerca de mí",
-        "description1": "Soy un desarrollador de Android con experiencia en la plataforma desde el año 2019. He realizado múltiples proyectos personales, así como trabajado en un diferentes características de varias aplicaciones de Android desde el año 2021. He trabajado desarrollando apps para empresas del ramo financiero y de entretenimiento.",
+        "description1": "Soy un desarrollador de Android con experiencia en la plataforma desde el año 2019. He realizado múltiples proyectos personales, así como trabajado en diferentes características de varias aplicaciones de Android desde el año 2021. Me he desempeñado desarrollando apps para empresas del ramo financiero y de entretenimiento.",
         "description2": "Me gradué del Instituto Politécnico Nacional como Ingeniero en Sistemas Computaciones y desde entonces no he parado de estudiar ni de aprender cada día. Me gusta estar al día con las nuevas tecnologías, así como involucrarme en otras áreas además del desarrollo en Android.",
         "imageAlt": "Foto de André Michel Pozos Nieto"
     },
@@ -23,7 +23,7 @@
             {
                 "startDate": "Septiembre 2024",
                 "endDate": null,
-                "icon": "mdiFerry",
+                "iconName": "mdiFerry",
                 "title": "Globant - Carnival Corporation",
                 "description": "Trabajando en un nuevo proyecto actualmente en desarrollo.",
                 "achievements": []
@@ -31,7 +31,7 @@
             {
                 "startDate": "Junio 2021",
                 "endDate": "Agosto 2024",
-                "icon": "mdiBank",
+                "iconName": "mdiBank",
                 "title": "Globant - Institución financiera",
                 "description": "Desarrollé múltiples características para una app de una institución financiera, así como una actualización visual y funcional a diferentes características implementadas previamente. Todas estas características están actualmente en producción.",
                 "achievements": [
@@ -43,11 +43,11 @@
             {
                 "startDate": "Enero 2019",
                 "endDate": "Diciembre 2019",
-                "icon": "mdiSchool",
+                "iconName": "mdiSchool",
                 "title": "Instituto Politécnico Nacional",
                 "description": "Desarrollé en equipo un trabajo final para el proceso de titulación de mi carrera de ingeniería que invoucró un año de trabajo en una app de Android de decoración de interiores con realidad aumentada.",
                 "achievements": [
-                    "Diseñé la arquitectura general del sistema el cuál involucra: la app de Android, una página web, una instancia de Firebase Cloud Storage, un servidor Node.js y una base de datos en PostreSQL, estos últimos desplegados en Heroku.",
+                    "Diseñé la arquitectura general del sistema el cuál involucra: la app de Android, una página web, una instancia de Firebase Cloud Storage, un servidor Node.js y una base de datos en PostgreSQL, estos últimos desplegados en Heroku.",
                     "Me involucré en el desarrollo del servidor de la aplicación, así como en el despliegue del servidor, la base de datos y la instancia de Firebase Cloud Storage.",
                     "Desarrollé en conjunto la app de Android incluyendo: la arquitectura de la app, múltiples pantallas y la comunicación con el back-end del sistema."
                 ]
@@ -62,7 +62,7 @@
         "nextScreenshot": "Ver siguiente captura de pantalla",
         "fuegograma": {
             "title": "Fuegograma",
-            "description": "Una clon de Instagram, donde puedes subir tus fotos y compartirlas con tus amistades. Puedes darle \"me gusta\" a fotos, comentarlas y seguir a otras personas.",
+            "description": "Un clon de Instagram, donde puedes subir tus fotos y compartirlas con tus amistades. Puedes darle \"me gusta\" a fotos, comentarlas y seguir a otras personas.",
             "images": [
                 "Pantalla inicial",
                 "API de Credential Manager",
@@ -74,45 +74,45 @@
                 "features": [
                     {
                         "name": "Pruebas de UI de Jetpack Compose",
-                        "icon": "mdiAbTesting"
+                        "iconName": "mdiAbTesting"
                     },
                     {
                         "name": "Configuración remota",
-                        "icon": "mdiCogRefresh"
+                        "iconName": "mdiCogRefresh"
                     },
                     {
                         "name": "App multi-módulo",
-                        "icon": "mdiViewModule"
+                        "iconName": "mdiViewModule"
                     },
                     {
                         "name": "Programación reactiva",
-                        "icon": "mdiAtom"
+                        "iconName": "mdiAtom"
                     },
                     {
                         "name": "Autorellenado de contraseñas",
-                        "icon": "mdiAccountKey"
+                        "iconName": "mdiAccountKey"
                     }
                 ],
                 "stack": [
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdiCube"
+                        "iconName": "mdiCube"
                     },
                     {
                         "name": "Firebase",
-                        "icon": "mdiFirebase"
+                        "iconName": "mdiFirebase"
                     },
                     {
                         "name": "Material You",
-                        "icon": "mdiMaterialDesign"
+                        "iconName": "mdiMaterialDesign"
                     },
                     {
                         "name": "CameraX",
-                        "icon": "mdiCameraEnhance"
+                        "iconName": "mdiCameraEnhance"
                     },
                     {
                         "name": "Work Manager",
-                        "icon": "mdiFileSync"
+                        "iconName": "mdiFileSync"
                     }
                 ]
             }
@@ -131,45 +131,45 @@
                 "features": [
                     {
                         "name": "Inyección de dependencias",
-                        "icon": "mdiNeedle"
+                        "iconName": "mdiNeedle"
                     },
                     {
                         "name": "Pruebas unitarias",
-                        "icon": "mdiTestTube"
+                        "iconName": "mdiTestTube"
                     },
                     {
                         "name": "Uso sin conexión",
-                        "icon": "mdiCloudOff"
+                        "iconName": "mdiCloudOff"
                     },
                     {
                         "name": "Generación de PDF",
-                        "icon": "mdiFilePdfBox"
+                        "iconName": "mdiFilePdfBox"
                     },
                     {
                         "name": "Patrón de arquitectura MVVM",
-                        "icon": "mdiFloorPlan"
+                        "iconName": "mdiFloorPlan"
                     }
                 ],
                 "stack": [
                     {
                         "name": "ARCore",
-                        "icon": "mdiAugmentedReality"
+                        "iconName": "mdiAugmentedReality"
                     },
                     {
                         "name": "Hilt",
-                        "icon": "mdiKnifeMilitary"
+                        "iconName": "mdiKnifeMilitary"
                     },
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdiCube"
+                        "iconName": "mdiCube"
                     },
                     {
                         "name": "Room",
-                        "icon": "mdiDatabase"
+                        "iconName": "mdiDatabase"
                     },
                     {
                         "name": "Firebase",
-                        "icon": "mdiFirebase"
+                        "iconName": "mdiFirebase"
                     }
                 ]
             }
@@ -186,45 +186,45 @@
                 "features": [
                     {
                         "name": "Sincronización en el fondo",
-                        "icon": "mdiSync"
+                        "iconName": "mdiSync"
                     },
                     {
                         "name": "Uso sin conexión",
-                        "icon": "mdiCloudOff"
+                        "iconName": "mdiCloudOff"
                     },
                     {
                         "name": "Alarm Manager",
-                        "icon": "mdiAlarm"
+                        "iconName": "mdiAlarm"
                     },
                     {
                         "name": "Material You",
-                        "icon": "mdiMaterialDesign"
+                        "iconName": "mdiMaterialDesign"
                     },
                     {
                         "name": "Detección de ubicación",
-                        "icon": "mdiCrosshairsGps"
+                        "iconName": "mdiCrosshairsGps"
                     }
                 ],
                 "stack": [
                     {
                         "name": "Jetpack Compose",
-                        "icon": "mdiCube"
+                        "iconName": "mdiCube"
                     },
                     {
                         "name": "DataStore",
-                        "icon": "mdiDatabase"
+                        "iconName": "mdiDatabase"
                     },
                     {
                         "name": "Room",
-                        "icon": "mdiDatabase"
+                        "iconName": "mdiDatabase"
                     },
                     {
                         "name": "Retrofit",
-                        "icon": "mdiDownloadNetwork"
+                        "iconName": "mdiDownloadNetwork"
                     },
                     {
                         "name": "Work Manager",
-                        "icon": "mdiFileSync"
+                        "iconName": "mdiFileSync"
                     }
                 ]
             }
@@ -278,6 +278,7 @@
         "text": "© 2025 André Michel Pozos Nieto. Todos los derechos reservados.",
         "tools": "Desarrollado con Vue.js, Vite y Vuetify. Íconos de Material Design Icons",
         "version": "Versión {0}",
+        "support": "",
         "repo": "Repositorio del proyecto"
     }
 }

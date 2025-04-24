@@ -7,9 +7,9 @@ v-footer(border)
             p.text-body-1 {{ $t('copyright.tools') }}
         v-row.text-center(justify="center")
             p.text-body-1 {{ $t('copyright.version', [version]) }} - 
-                a.text-yellow(v-show="showSupport" href="https://buymeacoffee.com/andreandyp") {{ $t('copyright.support') }} 
+                a.text-primary(v-show="showSupport" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('copyright.support') }} 
                 span(v-show="showSupport")  - 
-                a(href="https://github.com/AndreAndyP/andreandyp.github.io") {{ $t('copyright.repo') }}
+                a(href="https://github.com/AndreAndyP/andreandyp.github.io" target="_blank") {{ $t('copyright.repo') }}
 </template>
 
 <script setup lang="ts">

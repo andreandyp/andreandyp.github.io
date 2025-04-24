@@ -1,4 +1,5 @@
 export interface Features {
     name: string;
-    icon: string;
+    iconName: string;
+    icon: unknown;
 }

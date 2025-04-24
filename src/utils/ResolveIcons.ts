@@ -1,6 +1,5 @@
-export async function resolveIcon(iconName: string): Promise<string> {
+export async function resolveIcon(iconName: string): Promise<unknown> {
     const value = (await import('@mdi/js'))[iconName];
 
-    // @ts-expect-error
     return value;
 }

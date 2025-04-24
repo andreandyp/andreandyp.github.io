@@ -14,7 +14,7 @@ v-container
                 p.text-body-1.py-3 {{ job.description }}
                 v-expansion-panels(v-if="job.achievements.length > 0" variant="default" :expand-icon="mdiMenuDown" :collapse-icon="mdiMenuUp")
                     v-expansion-panel.border-sm(elevation="4")
-                        v-expansion-panel-title
+                        v-expansion-panel-title.text-break
                             v-icon(:icon="mdiMedal" color="secondary")
                             p.text-overline.px-2 {{ $t('work.accomplishments') }}
                         v-expansion-panel-text
@@ -44,7 +44,7 @@ onMounted(async () => {
 
 async function onInit() {
     const mapIcons = (tm("work.jobs") as Job[]).map(async (element) => {
-        element.icon = await resolveIcon(element.icon);
+        element.icon = await resolveIcon(element.iconName);
         return element;
     });
 

@@ -5,15 +5,15 @@ v-container
             h1.text-wrap {{ $t("hero.title") }}
         v-card-subtitle
             h2.text-wrap {{ $t("hero.subtitle") }}
-        v-card-text.d-flex.ga-2
+        v-card-text.d-flex.ga-2.align-center
             v-btn(:icon="mdiGithub" :aria-label="$t('hero.github')" href="https://github.com/AndreAndyP" target="_blank" color="primary")
             v-btn(:icon="mdiLinkedin" :aria-label="$t('hero.linkedin')" href="https://www.linkedin.com/in/andreandyp" target="_blank" color="primary")
             v-btn(:icon="mdiAt" :aria-label="$t('hero.email')" @click="click64Icon" target="_blank" color="primary")
+            div(v-show="showSupport && !mobile")
+                v-btn(:prepend-icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="elevated" size="large" rounded="rounded" color="#FFD700" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('hero.coffee') }}
             div(v-show="!showSupport")
-                v-btn(v-tooltip="$t('hero.coffee')" :icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="outlined" color="yellow" href="https://buymeacoffee.com/andreandyp" target="_blank")
+                v-btn(v-tooltip="$t('hero.coffee')" :icon="mdiHandCoin" :aria-label="$t('hero.coffee')" color="#FFD700" href="https://buymeacoffee.com/andreandyp" target="_blank")
         v-card-actions.d-none.d-sm-flex.justify-end
-            div.ms-2(v-show="showSupport")
-                v-btn(:prepend-icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="elevated" color="yellow" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('hero.coffee') }}
             v-spacer
             v-menu(location="bottom")
                 template(v-slot:activator="{ props }")
@@ -29,7 +29,7 @@ v-container
                         v-list-item-title {{ theme }}
         v-card-actions.d-flex.d-sm-none.justify-end
             div.ms-2(v-show="showSupport")
-                v-btn(:prepend-icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="elevated" color="yellow" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('hero.coffee') }}
+                v-btn(:prepend-icon="mdiHandCoin" :aria-label="$t('hero.coffee')" variant="elevated" rounded="rounded" color="#FFD700" href="https://buymeacoffee.com/andreandyp" target="_blank") {{ $t('hero.coffee') }}
             v-spacer
             v-menu(location="bottom")
                 template(v-slot:activator="{ props }")
@@ -48,18 +48,18 @@ v-container
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { useTheme } from "vuetify";
+import { useTheme, useDisplay } from "vuetify";
 import { mdiGithub, mdiLinkedin, mdiAt, mdiTranslate, mdiThemeLightDark, mdiHandCoin } from "@mdi/js";
 import { name } from "../../package.json";
 import { type LanguageChooser } from "@/types/LanguageChooser.ts";
 
 const { tm, locale, availableLocales } = useI18n();
 const { global } = useTheme();
+const { mobile } = useDisplay();
 
 const availableLanguages = ref(tm("hero.languages") as string[]);
 const availableThemes = ref(tm("hero.themes") as string[]);
 const currentTheme = ref(2);
-const currentThemeName = ref(tm("hero.themes")[2]);
 
 watch(locale, () => {
     availableLanguages.value = tm("hero.languages");
@@ -67,7 +67,6 @@ watch(locale, () => {
 });
 
 watch(currentTheme, (newValue: number) => {
-    currentThemeName.value = availableThemes.value[newValue];
     switch (newValue) {
         case 0:
             global.name.value = "pageThemeLight";
@@ -91,6 +90,8 @@ const currentLocale = computed(() =>
         .filter(value => locale.value.includes(value.code))[0]
         .text
 );
+
+const currentThemeName = computed(() => availableThemes.value[currentTheme.value]);
 
 const showSupport = computed(() => currentLocale.value.includes("En"));
 

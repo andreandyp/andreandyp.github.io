@@ -46,7 +46,7 @@ v-container
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, type ComputedRef } from "vue";
 import { useI18n } from "vue-i18n";
 import { useTheme, useDisplay } from "vuetify";
 import { mdiGithub, mdiLinkedin, mdiAt, mdiTranslate, mdiThemeLightDark, mdiHandCoin } from "@mdi/js";
@@ -80,15 +80,14 @@ watch(currentTheme, (newValue: number) => {
     }
 });
 
-const locales = computed<LanguageChooser[]>(() =>
+const locales: ComputedRef<LanguageChooser[]> = computed<LanguageChooser[]>(() =>
     availableLanguages.value
-        .map((lang, index) => ({ code: availableLocales[index], text: lang }))
+        .map((lang, index) => ({ code: availableLocales[index] ?? "", text: lang }))
 );
 
 const currentLocale = computed(() =>
     locales.value
-        .filter(value => locale.value.includes(value.code))[0]
-        .text
+        .filter(value => locale.value.includes(value.code))[0]?.text ?? ""
 );
 
 const currentThemeName = computed(() => availableThemes.value[currentTheme.value]);

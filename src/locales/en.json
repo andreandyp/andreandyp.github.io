@@ -251,15 +251,15 @@
         ],
         "articlesList": [
             {
-                "name": "(Spanish only) Permisos en Android - aprende a implementar el flujo completo",
-                "url": "https://medium.com/@andreandyp/permisos-en-android-aprende-a-implementar-el-flujo-completo-a5411bd14101"
+                "name": "Permissions on Android - Learn how to implement the complete workflow.",
+                "url": "https://medium.com/@andreandyp/permissions-on-android-learn-how-to-implement-the-complete-workflow-01c36be8190a"
             },
             {
                 "name": "Improving a responsive Android app",
                 "url": "https://medium.com/@andreandyp/improving-a-responsive-android-app-de3f987fcf22"
             },
             {
-                "name": "From qualifiers to Window size classes — (re) implementing a responsive app on Android",
+                "name": "From qualifiers to Window size classes - (re) implementing a responsive app on Android",
                 "url": "https://medium.com/@andreandyp/from-qualifiers-to-window-size-classes-re-implementing-a-responsive-app-on-android-82f170d79aa6"
             }
         ],

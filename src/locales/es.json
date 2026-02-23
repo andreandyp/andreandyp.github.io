@@ -22,18 +22,22 @@
         "jobs": [
             {
                 "startDate": "Septiembre 2024",
-                "endDate": null,
+                "endDate": "Enero 2026",
                 "iconName": "mdiFerry",
                 "title": "Globant - Carnival Corporation",
-                "description": "Trabajando en un nuevo proyecto actualmente en desarrollo.",
-                "achievements": []
+                "description": "Dirigí el desarrollo y lanzamiento a producción de una aplicación usada internamente por el equipo de Carnival Corp. para la venta de fotografías a los huéspedes de los cruceros de la compañía.",
+                "achievements": [
+                    "Recreé el sistema de conexión de la aplicación, que involucra una conexión entre un dispositivo Android y una cámara profesional, mejorando la fiabilidad del proceso de toma y subida de fotos para los fotógrafos de los cruceros.",
+                    "Reduje a cero la cantidad de fotos perdidas durante el proceso de toma y subida de fotos, en comparación a la aplicación utilizada previamente por los fotógrafos.",
+                    "Trabajé diaria y activamente con todo el equipo involucrado (QA, UX, Negocio, Back-end) con el fin de terminar el desarrollo en el tiempo establecido (menos de un año)."
+                ]
             },
             {
                 "startDate": "Junio 2021",
                 "endDate": "Agosto 2024",
                 "iconName": "mdiBank",
-                "title": "Globant - Institución financiera",
-                "description": "Desarrollé múltiples características para una app de una institución financiera, así como una actualización visual y funcional a diferentes características implementadas previamente. Todas estas características están actualmente en producción.",
+                "title": "Globant - Institución financiera mexicana",
+                "description": "Desarrollé múltiples características para una app de una institución financiera mexicana, así como una actualización visual y funcional a diferentes características implementadas previamente. Todas estas características están actualmente en producción.",
                 "achievements": [
                     "Me involucré de principio a fin en la modernización y corrección de una característica que incluía múltiples pantallas con múltiples flujos alternativos, trabajando con múltiples personas desarradoras, generando miles de contrataciones de nuevos productos usados por miles de personas usuarias nuevas y existentes.",
                     "Implementé desde cero un componente de UI moderno con base en nuevos requisitos de experiencia de usuario, utilizando únicamente el sistema de vistas heredado de Android, aumentando la retención en el proceso de contratación de un nuevo producto.",
@@ -130,8 +134,8 @@
             "technologies": {
                 "features": [
                     {
-                        "name": "Inyección de dependencias",
-                        "iconName": "mdiNeedle"
+                        "name": "Realidad aumentada",
+                        "iconName": "mdiCubeScan"
                     },
                     {
                         "name": "Pruebas unitarias",
@@ -146,8 +150,8 @@
                         "iconName": "mdiFilePdfBox"
                     },
                     {
-                        "name": "Patrón de arquitectura MVVM",
-                        "iconName": "mdiFloorPlan"
+                        "name": "Experiencia personalizada",
+                        "iconName": "mdiFaceAgent"
                     }
                 ],
                 "stack": [

@@ -22,18 +22,22 @@
         "jobs": [
             {
                 "startDate": "September 2024",
-                "endDate": null,
+                "endDate": "January 2026",
                 "iconName": "mdiFerry",
                 "title": "Globant - Carnival Corporation",
-                "description": "Working on a brand new project currently in development.",
-                "achievements": []
+                "description": "Led the development and release of an application used internally by the Carnival Corp. team for selling photos to guests on the company's cruise ships.",
+                "achievements": [
+                    "Recreated the application's connection system, which involves a connection between an Android device and a professional camera, improving the reliability of the photo-taking and uploading process for cruise ship photographers.",
+                    "Decreased to zero the number of photos lost during the photo taking and uploading process, compared to the application previously used by photographers.",
+                    "Worked actively on a daily basis with the entire team involved (QA, UX, Business, Back-end) in order to complete the development within the established time (less than a year)."
+                ]
             },
             {
                 "startDate": "June 2021",
                 "endDate": "August 2024",
                 "iconName": "mdiBank",
-                "title": "Globant - Financial institution",
-                "description": "Developed multiple features for a financial institution app, as well as a visual and functional upgrade to several previously implemented features. All of these features are currently in production.",
+                "title": "Globant - Mexican bank",
+                "description": "Developed multiple features for an app of a mexican bank, as well as a visual and functional upgrade to several previously implemented features. All of these features are currently in production.",
                 "achievements": [
                     "Involved from start to finish in a revamp and fix of a feature that included multiple screens with multiple alternate flows, as working with multiple developers, by generating thousands of new product purchases used by thousands of new and existing users.",
                     "Implemented a modern UI component from scratch based on new UX requirements, using only the legacy Android view system, and increasing retention in the onboarding process for a new product.",
@@ -130,16 +134,16 @@
             "technologies": {
                 "features": [
                     {
-                        "name": "Dependency injection",
-                        "iconName": "mdiNeedle"
+                        "name": "Augmented reality",
+                        "iconName": "mdiCubeScan"
                     },
                     {
                         "name": "Unit Testing",
                         "iconName": "mdiTestTube"
                     },
                     {
-                        "name": "MVVM architecture",
-                        "iconName": "mdiFloorPlan"
+                        "name": "Personalized experience",
+                        "iconName": "mdiFaceAgent"
                     },
                     {
                         "name": "Offline first",
